@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Center Code</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">👨‍🎓</div>
+        <h2>Exam Center Code</h2>
+        <p id="message">Enter your name and email to get your examination center code.</p>
+        <div class="submit-fields" id="student-info">
+            <input type="text" placeholder="Enter your name" id="name">
+            <input type="email" placeholder="Enter your email" id="email">
+            <button class="btn" onclick="getCode(name,email)" >Get Center Code</button>
+            <button class="d-none" id="alert-btn">Email already present</button>
+        </div>
+    </div>
+    <div id="center-container">
+        <div class="card">
+            <div class="username">Name : <span id="student-name"></span></div>
+            <div class="useremail">Email : <span id="student-email"></span></div>
+            <div class="college-code">College code : <span id="collegecode"></span></div>
+            <div class="exam-city">City : <span id="cityname"></span></div>
+            <button class="btn" onclick="downloadCode()" >Download your Information</button>
+            <button class="d-none" id="greet-btn">Download success</button>
+        </div>
+    </div>
+</body>
+</html>
